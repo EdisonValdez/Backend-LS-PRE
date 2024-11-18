@@ -1,0 +1,35 @@
+from fcm_django.models import FCMDevice, FCMDeviceManager, FCMDeviceQuerySet
+from firebase_admin.messaging import *  # noqa: F403
+
+# Export all external models into this internal wraper class
+__all__ = [
+    'FCMDevice',
+    'FCMDeviceManager',
+    'FCMDeviceQuerySet',
+    'AndroidConfig',
+    'AndroidFCMOptions',
+    'AndroidNotification',
+    'APNSConfig',
+    'APNSFCMOptions',
+    'APNSPayload',
+    'Aps',
+    'ApsAlert',
+    'BatchResponse',
+    'CriticalSound',
+    'ErrorInfo',
+    'FCMOptions',
+    'LightSettings',
+    'Message',
+    'MulticastMessage',
+    'Notification',
+    'QuotaExceededError',
+    'SenderIdMismatchError',
+    'SendResponse',
+    'ThirdPartyAuthError',
+    'TopicManagementResponse',
+    'UnregisteredError',
+    'WebpushConfig',
+    'WebpushFCMOptions',
+    'WebpushNotification',
+    'WebpushNotificationAction',
+]

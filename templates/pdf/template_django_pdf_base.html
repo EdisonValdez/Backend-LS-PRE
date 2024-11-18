@@ -1,0 +1,448 @@
+<style type="text/css">
+    @page {
+        size: a4 portrait;
+        margin: 1px;
+        -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .separator {
+        height: 32px;
+        -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__container {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets {
+        border-collapse:collapse;
+        border-spacing:0;
+        font-size:8px;
+        -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets .local-secrets__header {
+        font-size: 11px;
+        border-collapse:collapse;
+        border: none;
+        background-color: #fbb03c;
+        padding: 1rem;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__logo {
+        width: 64px;
+        height: 52px;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__user {
+        width: 48px;
+        height: 48px;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .right {
+        text-align: right;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .left {
+        text-align:left;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+    .local-secrets th {
+        background-color: #fbb03c;
+        border: 1px solid #fbb03c;
+        padding: 1.5rem;
+        border-spacing: 0;
+        border: none;
+        font-family:Arial, sans-serif;
+        font-size:14px;
+        font-weight:normal;
+        overflow:hidden;
+        padding:5px 5px;
+        word-break:normal;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets .local-secrets__cell{
+        vertical-align: top;
+        padding-right: 16px;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets .local-secrets__cell-comercial{
+        width: 35%;
+        vertical-align: top;
+        text-align: right;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__step {
+        width: 24px;
+        font-size: 12px;
+        font-weight: 800;
+        text-align: center;
+        -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__stage {
+        padding: 0px;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+    .local-secrets__stage-cover-cell {
+        /*width: 88px;
+        height: 72px;
+        padding: px;*/
+        font-size: 16px;
+        text-align: center;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__stage-cover {
+        width: 64px;
+        height: 64px;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__stage > b {
+        font-size: 11px;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__trip {
+        border: none;
+        -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__trip-header {
+        margin-left: 0px;
+        font-size: 20px;
+        -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__trip .local-secrets__date-title {
+        color: #B1B1B1;
+        width: 150px;
+        padding-top: 5px;
+        text-align: left;
+        vertical-align: middle;
+        font-size: 8px;
+        -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__trip .local-secrets__date {
+        color: #fbb03c;
+        font-weight: 800;
+        width: 150px;
+        padding-top: 5px;
+        text-align: left;
+        font-size: 11px;
+        vertical-align: middle;
+        -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__map {
+        width:100%;
+        padding-bottom: 16px;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets_ad {
+        width: 100%;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__user-name {
+        padding: 0px;
+        font-size: 11px;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__user {
+        padding:0px;
+        text-align: left;
+        width:56px;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__comercial-info {
+        border:0.6px solid #B1B1B1;
+        margin-left:0px;
+        margin-right:0px;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__comercial-info-table {
+        width:100%;
+        border-collapse:collapse;
+        border-spacing:0;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__first-cell {
+        padding-top:8px;
+        padding-left:0px;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__slogan {
+        padding-top:8px;
+        padding-left:0px;
+        color:#B1B1B1;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__link {
+        padding-top:8px;
+        padding-left:0px;
+        padding-bottom: 8px;
+        font-size: 11px;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__donwload-copy {
+        padding-top:16px;
+        padding-left:8px;
+        border-top:0.6px solid #B1B1B1;
+        border-left:0.6px solid #B1B1B1;
+        border-right:0.6px solid #B1B1B1;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+
+    .local-secrets__advertisement {
+        padding-top:16px;
+        padding-left:12px;
+        border-bottom:0.6px solid #B1B1B1;
+        border-left:0.6px solid #B1B1B1;
+        border-right:0.6px solid #B1B1B1;
+        margin-left:0px;
+        margin-right:0px;
+      -pdf-keep-in-frame-mode: truncate;
+    }
+    </style>
+<div class="local-secrets__container">
+
+    <table class="local-secrets">
+    <thead>
+      <tr>
+        <th class="local-secrets__header left">
+            <img
+                src="media/template_media/Logo-LocalSecrets.png"
+                alt="Local Secrets"
+                class="local-secrets__logo"
+            />
+        </th>
+        <th class="local-secrets__header">
+            <table class="local-secrets">
+                <tr>
+                    <td class="local-secrets__user-name">Trip of {{ username }}</td>
+                  <p>{{ user.profile_picture.url|slice:"1:" }}</p>
+                    <td class="local-secrets__user">
+                        <img
+                            src="{{ user.profile_picture.url|slice:"1:"  }}"
+                            alt="Local Secrets"
+                            class="local-secrets__user"
+                        />
+                    </td>
+                </tr>
+            </table>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr class="separator"><td>&nbsp;</td><td> </td></tr>
+        <tr>
+            <td class="local-secrets__cell">
+                <h1
+                    id="tripHeader"
+                    class="local-secrets__trip-header"
+                >
+                    {{travel.title}}
+                </h1>
+                <table class="local-secrets__trip">
+
+                        <tr>
+                            <td class="local-secrets__date-title">START DATE</td>
+                            <td class="local-secrets__date-title">END DATE</td>
+                        </tr>
+                        <tr>
+                            <td class="local-secrets__date">{{ travel.initial_date }}</td>
+                            <td class="local-secrets__date">{{ travel.end_date }}</td>
+                        </tr>
+
+                    {% for stop in travel.stops.all%}
+                        <p>{{ stop.images.all.first.image.url }}</p>
+                        <tr class="local-secrets__step">
+                          <td class="local-secrets__cell">
+                              <table class="local-secrets">
+                                  <tr class="local-secrets__step">
+                                      <td class="local-secrets__step">{{ forloop.counter }}</td>
+                                      <td class="local-secrets__stage-cover-cell">
+
+                                          <img
+                                              src="{{ base_url }}{{ stop.images.all.first.image.url }}"
+                                              alt="City"
+                                              class="local-secrets__stage-cover"
+                                          />
+                                      </td>
+                                      <td class="local-secrets__stage">
+                                          <b>{{ stop.title }}</b>
+                                          <div>
+                                            <table class="local-secrets">
+                                              <tr class="local-secrets__step">
+                                                <td class="local-secrets__step">
+                                                  <img
+                                                    src="{{ base_url }}/media/template_media/Icon-Location.svg"
+                                                    alt="Location"
+                                                    class="local-secrets__stage-icon"
+                                                  />
+                                                </td>
+                                                <td class="local-secrets__step">
+                                                  <p>{{ stop.address.street }}, {{ stop.address.number }}, {{ stop.address.city.name }}</p>
+                                                </td>
+                                              </tr>
+                                            </table>
+
+                                          </div>
+                                          <div>
+                                            <table class="local-secrets">
+                                              <tr class="local-secrets__step">
+                                                <td class="local-secrets__step">
+                                                  <img
+                                                    src="{{ base_url }}/media/template_media/Icon-Time.svg"
+                                                    alt="Dates"
+                                                    class="local-secrets__stage-icon"
+                                                  />
+                                                </td>
+                                                <td class="local-secrets__step">
+
+                                                  {% if stop.type == 'place' %}
+                                                    <p>{{ stop.next_schedule.opening_hours.all.first.initial_date }}</p>
+                                                  {% endif %}
+                                                  {% if stop.type == 'event' %}
+                                                    <p>{{ stop.next_schedule.day }}</p>
+                                                  {% endif %}
+
+                                                </td>
+                                              </tr>
+                                            </table>
+
+                                          </div>
+                                          <div>
+                                            <table class="local-secrets">
+                                              <tr class="local-secrets__step">
+                                                <td class="local-secrets__step">
+                                                  <img
+                                                    src="{{ base_url }}/media/template_media/Icon-Telephone.svg"
+                                                    alt="Telephone"
+                                                    class="local-secrets__stage-icon"
+                                                  />
+                                                </td>
+                                                <td class="local-secrets__step">
+                                                  {% if not stop.phone %}
+                                                    <a href="tel:{{ stop.phone }}">{{ stop.phone }}</a>
+                                                  {% endif %}
+                                                </td>
+                                              </tr>
+                                            </table>
+
+                                          </div>
+                                          <div>
+                                            <table class="local-secrets">
+                                              <tr class="local-secrets__step">
+                                                <td class="local-secrets__step">
+                                                  <img
+                                                    src="{{ base_url }}/media/template_media/Icon-Web.svg"
+                                                    alt="Website"
+                                                    class="local-secrets__stage-icon left-margin"
+                                                  />
+                                                </td>
+                                                <td class="local-secrets__step">
+                                                  <a href="{{ stop.url }}">{{ stop.url }}</a>
+                                                </td>
+                                              </tr>
+                                            </table>
+
+                                          </div>
+                                      </td>
+                                  </tr>
+                              </table>
+                          </td>
+                      </tr>
+
+                    {%  endfor %}
+
+
+
+                </table>
+            </td>
+
+            <td rowspan={{ travel.stops.count }} class="local-secrets__cell-comercial">
+                <table class="local-secrets" style="margin-left:8px;border-collapse: collapse;">
+                    <tbody>
+                        <tr>
+                            <td style="padding-bottom:16px;">
+                                <img
+                                    src="{{ base_url }}/media/template-media/Map-Example.png"
+                                    alt="Map mock"
+                                    class="local-secrets__map"
+                                />
+                            </td>
+                        </tr>
+                        <tr style="padding-top:8px;">
+                            <td class="local-secrets__comercial-info">
+                                <table class="local-secrets__comercial-info-table">
+                                    <tbody>
+                                        <tr>
+                                            <td class="local-secrets__first-cell left">
+                                                <img
+                                                    src="{{ base_url }}/media/template_media/Logo-LocalSecrets.png"
+                                                    alt="Local Secrets"
+                                                    class="local-secrets__logo"
+                                                />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="local-secrets__slogan left">
+                                                TRAVEL. CONNECT. DISCOVER
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="local-secrets__link left">
+                                                <a href="www.localsecrets.travel">www.localsecrets.travel</a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="local-secrets__donwload-copy left">
+                                <img
+                                    src="{{ base_url }}/media/template_media/comercial.png"
+                                    alt="Download now the app of Local Secrets and discover the world"
+                                    style="width:100%;"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="local-secrets__advertisement">
+                                <img
+                                    src="./assets/advertisement.jpeg"
+                                    alt="Download app"
+                                    class="local-secrets_ad"
+                                />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+    </table>
+</div>

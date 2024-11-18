@@ -1,0 +1,53 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "es.rudo.localsecrets",
+      "package_name": "es.rudo.localsecrets",
+      "sha256_cert_fingerprints": [
+        "3C:99:68:13:48:3C:50:1B:5E:F4:F6:36:38:51:E7:4D:E6:BD:CC:DF:70:FE:AA:42:C9:0B:40:F2:F1:9C:45:42",
+        "45:81:72:51:58:B3:ED:39:63:9C:54:0E:36:A2:B0:22:99:6A:F9:14:11:8A:02:71:0A:8A:88:CE:2E:EF:A6:F3",
+        "F2:D7:4B:8A:1C:BF:31:73:6A:E9:76:AD:0B:6D:1B:12:E0:18:B3:23:DA:81:4C:D7:2D:19:C4:6B:B2:AE:08:F6"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "es.rudo.localsecrets",
+      "package_name": "es.rudo.localsecrets",
+      "sha256_cert_fingerprints": [
+        "45:81:72:51:58:B3:ED:39:63:9C:54:0E:36:A2:B0:22:99:6A:F9:14:11:8A:02:71:0A:8A:88:CE:2E:EF:A6:F3",
+        "F2:D7:4B:8A:1C:BF:31:73:6A:E9:76:AD:0B:6D:1B:12:E0:18:B3:23:DA:81:4C:D7:2D:19:C4:6B:B2:AE:08:F6"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "es.rudo.localsecrets",
+      "sha256_cert_fingerprints": [
+        "45:81:72:51:58:B3:ED:39:63:9C:54:0E:36:A2:B0:22:99:6A:F9:14:11:8A:02:71:0A:8A:88:CE:2E:EF:A6:F3"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "localsecrets.travel.app",
+      "sha256_cert_fingerprints": [
+        "CB:23:E0:F1:E3:E8:4B:21:0C:7C:AD:81:4B:05:1A:F0:B1:65:D6:50:8D:5B:53:E6:B8:E7:41:54:E3:DB:25:B5"
+      ]
+    }
+  }
+]

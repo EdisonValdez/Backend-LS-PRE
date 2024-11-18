@@ -1,0 +1,862 @@
+{
+	"info": {
+		"_postman_id": "96649948-adcb-4e38-8150-a0c9fde3cbb6",
+		"name": "Base Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/auth",
+			"item": [
+				{
+					"name": "/token (secret)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"grant_type\": \"client_credentials\",\n    \"client_id\": \"{{client_id_cc}}\",\n    \"client_secret\": \"{{client_secret_cc}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/token",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/token (user)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"grant_type\": \"password\",\n    \"username\": \"{{username}}\",\n    \"password\": \"{{password}}\",\n    \"client_id\": \"{{client_id_pb}}\",\n    \"client_secret\": \"{{client_secret_pb}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/token",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/token (refresh-user)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"grant_type\": \"refresh_token\",\n    \"refresh_token\": \"7Qw0SWakehgibm3ltXsaKNpO66dvOt\",\n    \"client_id\": \"{{client_id_pb}}\",\n    \"client_secret\": \"{{client_secret_pb}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/auth/token",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"auth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/convert-token (facebook)",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "convert_token",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "wChc17aw7efIOK8XogVDDtVQoHeOvXvewlyKFKR3",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "c1nqukqqe2hvTvBj9MOBbae38PKL58bMrKJBI5ZNndnA85hS75CNf8c0aKbmc0KpG6NLdgYgn4IEWmNaNqxaeRPWacZ2TTANJIYYN7ziQ2f698mBs7XlqvyME7dzN5I8",
+									"type": "text"
+								},
+								{
+									"key": "backend",
+									"value": "facebook",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "EABQ29Oyk0HIBAPZBeMmiGH8lttw8uvqWoLch4ZCZCEoNevtEzZBrN1SIx8rgS6jMBSMSUOzML9Xh58UZCTIqDFIbDJjpB7JiZCCQKASYyiuypYmSEgAOnXQ95PEVwlXlz3eyZCZB78gXilYaBJfGdzYymgfPV50EljbNYYuPfmLXSwLPNhfLHlUhHxiPlaflleiEuXTApjMrCUGN6GJ7gXHx",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://testdev.ddns.net/auth/convert-token",
+							"protocol": "https",
+							"host": [
+								"testdev",
+								"ddns",
+								"net"
+							],
+							"path": [
+								"auth",
+								"convert-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/convert-token (google-local)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "convert_token",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "8M0ywnecdTAlpBtTTnYZq5IODgC3PjYBn47QgWOW",
+									"description": "wChc17aw7efIOK8XogVDDtVQoHeOvXvewlyKFKR3",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "NRdcFQdIxCDwkWIiEvGCBHCNzZ3lsRPfQV24uRu6LFL1X0MENvEAQcr46YRTRligvAa7qR6dOy0jkBa6ICqUyv9p1qfytNcR1vjFY0d6z8Jvh9ymi1Vf5AmQJPpn7pbl",
+									"description": "c1nqukqqe2hvTvBj9MOBbae38PKL58bMrKJBI5ZNndnA85hS75CNf8c0aKbmc0KpG6NLdgYgn4IEWmNaNqxaeRPWacZ2TTANJIYYN7ziQ2f698mBs7XlqvyME7dzN5I8",
+									"type": "text"
+								},
+								{
+									"key": "backend",
+									"value": "google-oauth2",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "ya29.A0ARrdaM_GtdDp6OikETaZFpPjOiEbHbG6Dp_ggzv3VLn77j7ddOY4EunkBtLq2wRPIpH4B21dIucTa5nIvURjKrDmh4Ac2j4k-7IDd0bM3gfQo7zVZR9RK-OYJzzjvtWGaPlBoqDkp8TvPeEfP1Ey9-mT2V11",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://local.baseproject.es:8000/auth/convert-token",
+							"protocol": "http",
+							"host": [
+								"local",
+								"baseproject",
+								"es"
+							],
+							"port": "8000",
+							"path": [
+								"auth",
+								"convert-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/convert-token (google-dev)",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "convert_token",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "wChc17aw7efIOK8XogVDDtVQoHeOvXvewlyKFKR3",
+									"type": "text"
+								},
+								{
+									"key": "client_secret",
+									"value": "c1nqukqqe2hvTvBj9MOBbae38PKL58bMrKJBI5ZNndnA85hS75CNf8c0aKbmc0KpG6NLdgYgn4IEWmNaNqxaeRPWacZ2TTANJIYYN7ziQ2f698mBs7XlqvyME7dzN5I8",
+									"type": "text"
+								},
+								{
+									"key": "backend",
+									"value": "google-oauth2",
+									"type": "text"
+								},
+								{
+									"key": "token",
+									"value": "ya29.A0ARrdaM_GtdDp6OikETaZFpPjOiEbHbG6Dp_ggzv3VLn77j7ddOY4EunkBtLq2wRPIpH4B21dIucTa5nIvURjKrDmh4Ac2j4k-7IDd0bM3gfQo7zVZR9RK-OYJzzjvtWGaPlBoqDkp8TvPeEfP1Ey9-mT2V11",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://testdev.ddns.net/auth/convert-token",
+							"protocol": "https",
+							"host": [
+								"testdev",
+								"ddns",
+								"net"
+							],
+							"path": [
+								"auth",
+								"convert-token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Google Auth Access Token",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://testdev.ddns.net/?state=state_parameter_passthrough_value&access_token=ya29.A0ARrdaM_GtdDp6OikETaZFpPjOiEbHbG6Dp_ggzv3VLn77j7ddOY4EunkBtLq2wRPIpH4B21dIucTa5nIvURjKrDmh4Ac2j4k-7IDd0bM3gfQo7zVZR9RK-OYJzzjvtWGaPlBoqDkp8TvPeEfP1Ey9-mT2V11&token_type=Bearer&expires_in=3599&scope=email%20profile%20openid%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/drive.metadata.readonly&authuser=0&hd=rudo.es&prompt=consent",
+							"protocol": "https",
+							"host": [
+								"testdev",
+								"ddns",
+								"net"
+							],
+							"path": [
+								""
+							],
+							"query": [
+								{
+									"key": "state",
+									"value": "state_parameter_passthrough_value"
+								},
+								{
+									"key": "access_token",
+									"value": "ya29.A0ARrdaM_GtdDp6OikETaZFpPjOiEbHbG6Dp_ggzv3VLn77j7ddOY4EunkBtLq2wRPIpH4B21dIucTa5nIvURjKrDmh4Ac2j4k-7IDd0bM3gfQo7zVZR9RK-OYJzzjvtWGaPlBoqDkp8TvPeEfP1Ey9-mT2V11"
+								},
+								{
+									"key": "token_type",
+									"value": "Bearer"
+								},
+								{
+									"key": "expires_in",
+									"value": "3599"
+								},
+								{
+									"key": "scope",
+									"value": "email%20profile%20openid%20https://www.googleapis.com/auth/userinfo.email%20https://www.googleapis.com/auth/userinfo.profile%20https://www.googleapis.com/auth/drive.metadata.readonly"
+								},
+								{
+									"key": "authuser",
+									"value": "0"
+								},
+								{
+									"key": "hd",
+									"value": "rudo.es"
+								},
+								{
+									"key": "prompt",
+									"value": "consent"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/app_version",
+			"item": [
+				{
+					"name": "/",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/app_version/?version=2.1.0&platform=android",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"app_version",
+								""
+							],
+							"query": [
+								{
+									"key": "version",
+									"value": "2.1.0"
+								},
+								{
+									"key": "platform",
+									"value": "android"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Updated",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/app_version/?version=2.1.0&platform=android",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"app_version",
+										""
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2.1.0"
+										},
+										{
+											"key": "platform",
+											"value": "android"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 29 Mar 2022 08:16:31 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.2"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Accept-Language, Cookie, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "Content-Language",
+									"value": "en"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"update_available\": false,\n    \"update_required\": false,\n    \"store_url\": \"https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox\"\n}"
+						},
+						{
+							"name": "Update required",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/app_version/?version=1.1.0&platform=android",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"app_version",
+										""
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "1.1.0"
+										},
+										{
+											"key": "platform",
+											"value": "android"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 29 Mar 2022 08:17:10 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.2"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Accept-Language, Cookie, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "148"
+								},
+								{
+									"key": "Content-Language",
+									"value": "en"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"update_available\": true,\n    \"update_required\": true,\n    \"store_url\": \"https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox\"\n}"
+						},
+						{
+							"name": "Update available",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/app_version/?version=2.0.0&platform=android",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"app_version",
+										""
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2.0.0"
+										},
+										{
+											"key": "platform",
+											"value": "android"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 29 Mar 2022 08:17:47 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.2"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Accept-Language, Cookie, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "149"
+								},
+								{
+									"key": "Content-Language",
+									"value": "en"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"update_available\": true,\n    \"update_required\": false,\n    \"store_url\": \"https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox\"\n}"
+						},
+						{
+							"name": "No fields error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/app_version/",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"app_version",
+										""
+									],
+									"query": [
+										{
+											"key": "version",
+											"value": "2.0.0",
+											"disabled": true
+										},
+										{
+											"key": "platform",
+											"value": "android",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 29 Mar 2022 08:18:10 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.2"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Accept-Language, Cookie, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "116"
+								},
+								{
+									"key": "Content-Language",
+									"value": "en"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"An error ocurred\",\n    \"detail\": {\n        \"version\": [\n            \"This field is required.\"\n        ],\n        \"platform\": [\n            \"This field is required.\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "/",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"version\": \"2.1.0\",\n    \"platform\": \"android\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/app_version/update",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"app_version",
+								"update"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Successful operation",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"version\": \"2.1.0\",\n    \"platform\": \"android\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{base_url}}/app_version/update",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"app_version",
+										"update"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Tue, 29 Mar 2022 08:20:03 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.2"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Accept-Language, Cookie, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "PUT, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "150"
+								},
+								{
+									"key": "Content-Language",
+									"value": "en"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"update_available\": false,\n    \"update_required\": false,\n    \"store_url\": \"https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox\"\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{access_token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					"const authUrl = `${pm.environment.get('base_url')}/auth/token`;",
+					"const exceptions = ['{{base_url}}/auth/token'].map(translateUrl);",
+					"",
+					"function translateUrl(url_var) {",
+					"    return pm.variables.replaceIn(url_var)",
+					"}",
+					"",
+					"function isSkipped() {",
+					"    try {",
+					"        return exceptions.includes(pm.variables.replaceIn(pm.request.url.toString()))",
+					"    } catch(error) {",
+					"        return false;",
+					"    }",
+					"}",
+					"",
+					"function isTokenStillValid() {",
+					"    const expiration = new Date(parseInt(pm.environment.get('access_token_expiration')));",
+					"    const now = new Date();",
+					"    return now < expiration;",
+					"}",
+					"",
+					"if(isSkipped()) {",
+					"    console.log('Authorization request skipped');",
+					"} else if(isTokenStillValid()) {",
+					"    console.log('Authorization token is still valid');",
+					"} else {",
+					"    pm.sendRequest({",
+					"        url: authUrl,",
+					"        method: 'POST',",
+					"        header: '',",
+					"        body: {",
+					"            mode: 'urlencoded',",
+					"            urlencoded: [",
+					"                {",
+					"                    key: \"grant_type\",",
+					"                    value: \"password\",",
+					"                    disabled: false",
+					"                },",
+					"                {",
+					"                    key: \"username\",",
+					"                    value: pm.environment.get('username'),",
+					"                    disabled: false",
+					"                },",
+					"                {",
+					"                    key: \"password\",",
+					"                    value: pm.environment.get('password'),",
+					"                    disabled: false",
+					"                },",
+					"                {",
+					"                    key: \"client_id\",",
+					"                    value: pm.environment.get('client_id_pb'),",
+					"                    disabled: false",
+					"                },",
+					"                {",
+					"                    key: \"client_secret\",",
+					"                    value: pm.environment.get('client_secret_pb'),",
+					"                    disabled: false",
+					"                }",
+					"            ]",
+					"        }",
+					"    }, function (err, response) {",
+					"        console.log('Authorization response:');",
+					"        if (err) {",
+					"            console.error(err);",
+					"        } else {",
+					"            const response_json = response.json()",
+					"            console.log(response_json);",
+					"            const expires_in = response_json.expires_in;",
+					"            const expiration = new Date();",
+					"            expiration.setSeconds(expiration.getSeconds() + expires_in);",
+					"            pm.environment.set(\"access_token\", response_json.access_token);",
+					"            pm.environment.set(\"refresh_token\", response_json.refresh_token);",
+					"            pm.environment.set(\"access_token_expiration\", expiration.getTime());",
+					"        }",
+					"        pm.expect(response).to.have.property('code', 200);",
+					"    });",
+					"}"
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

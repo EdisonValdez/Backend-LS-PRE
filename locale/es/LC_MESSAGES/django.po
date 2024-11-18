@@ -1,0 +1,1032 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-01 10:44+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: config/settings/base.py:230
+msgid "English"
+msgstr "Inglés"
+
+#: config/settings/base.py:231
+msgid "Spanish"
+msgstr "Español"
+
+#: config/settings/base.py:373
+msgid "FCM"
+msgstr "FCM"
+
+#: local_secrets/app_version/apps.py:7
+msgid "App versions"
+msgstr "Versiones de la app"
+
+#: local_secrets/app_version/models.py:10
+#: local_secrets/app_version/models.py:40
+msgid "Platform"
+msgstr "Plataforma"
+
+#: local_secrets/app_version/models.py:11
+#: local_secrets/app_version/models.py:28
+msgid "Version"
+msgstr "Versión"
+
+#: local_secrets/app_version/models.py:12
+msgid "Required"
+msgstr "Requerido"
+
+#: local_secrets/app_version/models.py:26 local_secrets/sites/models.py:307
+#: local_secrets/sites/models.py:377 local_secrets/travels/models.py:18
+#: local_secrets/users/models.py:80 local_secrets/users/models.py:129
+msgid "User"
+msgstr "Usuario"
+
+#: local_secrets/app_version/models.py:41
+msgid "Store url"
+msgstr "URL tienda"
+
+#: local_secrets/app_version/serializers.py:35
+msgid "No existing version match with given params"
+msgstr "No se encontró versión con los datos recibidos"
+
+#: local_secrets/cities/models.py:15 local_secrets/cities/models.py:41
+#: local_secrets/cities/models.py:67 local_secrets/cities/models.py:128
+#: local_secrets/languages/models.py:10
+msgid "Name"
+msgstr "Nombre"
+
+#: local_secrets/cities/models.py:17 local_secrets/cities/models.py:43
+msgid "ISO Code"
+msgstr "Código ISO"
+
+#: local_secrets/cities/models.py:18 local_secrets/cities/models.py:44
+#, fuzzy
+#| msgid "Phone"
+msgid "Phone code"
+msgstr "Teléfono"
+
+#: local_secrets/cities/models.py:21 local_secrets/cities/models.py:22
+#, fuzzy
+#| msgid "Phone"
+msgid "Phone Code"
+msgstr "Teléfono"
+
+#: local_secrets/cities/models.py:37 local_secrets/cities/models.py:63
+#: local_secrets/users/models.py:175
+#, fuzzy
+#| msgid "Translation"
+msgid "Translated Name"
+msgstr "Traducción"
+
+#: local_secrets/cities/models.py:47 local_secrets/cities/models.py:77
+msgid "Country"
+msgstr "País"
+
+#: local_secrets/cities/models.py:48
+msgid "Countries"
+msgstr "Paises"
+
+#: local_secrets/cities/models.py:69 local_secrets/cities/models.py:142
+msgid "CP"
+msgstr "Código Postal"
+
+#: local_secrets/cities/models.py:71 local_secrets/cities/models.py:129
+msgid "Province"
+msgstr "Provincia"
+
+#: local_secrets/cities/models.py:73 local_secrets/cities/models.py:143
+msgid "Geolocation"
+msgstr "Geolocalización"
+
+#: local_secrets/cities/models.py:75 local_secrets/cities/models.py:130
+#: local_secrets/panel/templates/admin_doc/model_detail.html:26
+#: local_secrets/panel/templates/admin_doc/model_detail.html:41
+#: local_secrets/panel/templates/admin_doc/model_detail.html:67
+#: local_secrets/sites/models.py:29 local_secrets/users/models.py:158
+msgid "Description"
+msgstr "Descripción"
+
+#: local_secrets/cities/models.py:79 local_secrets/cities/models.py:131
+msgid "Slogan"
+msgstr ""
+
+#: local_secrets/cities/models.py:81 local_secrets/sites/models.py:43
+msgid "Link"
+msgstr "Link"
+
+#: local_secrets/cities/models.py:87 local_secrets/sites/models.py:41
+msgid "Video"
+msgstr "Vídeo"
+
+#: local_secrets/cities/models.py:89 local_secrets/cities/models.py:145
+msgid "Latitude"
+msgstr "Latitud"
+
+#: local_secrets/cities/models.py:91 local_secrets/cities/models.py:147
+msgid "Longitude"
+msgstr "Longitud"
+
+#: local_secrets/cities/models.py:93
+msgid "Is active?"
+msgstr "¿Está activo?"
+
+#: local_secrets/cities/models.py:96 local_secrets/cities/models.py:135
+#: local_secrets/routes/models.py:15 local_secrets/sites/models.py:51
+msgid "City"
+msgstr "Ciudad"
+
+#: local_secrets/cities/models.py:97 local_secrets/travels/models.py:14
+#: local_secrets/users/admin.py:66
+msgid "Cities"
+msgstr "Ciudades"
+
+#: local_secrets/cities/models.py:136
+msgid "Image"
+msgstr "Imágen"
+
+#: local_secrets/cities/models.py:140
+msgid "Street"
+msgstr "Calle"
+
+#: local_secrets/cities/models.py:150
+msgid "Google Place Id"
+msgstr "Google Place Id"
+
+#: local_secrets/cities/models.py:151
+msgid "Details"
+msgstr "Detalle"
+
+#: local_secrets/cities/models.py:152
+msgid "Number"
+msgstr "Número"
+
+#: local_secrets/cities/models.py:153
+msgid "Door"
+msgstr "Puerta"
+
+#: local_secrets/cities/models.py:154
+msgid "Floor"
+msgstr "Piso"
+
+#: local_secrets/cities/models.py:155
+#, fuzzy
+#| msgid "Created at"
+msgid "Creation date"
+msgstr "Creado a las"
+
+#: local_secrets/cities/models.py:158
+msgid "Address"
+msgstr "Dirección"
+
+#: local_secrets/cities/models.py:159
+msgid "Addresses"
+msgstr "Direcciones"
+
+#: local_secrets/core/apps.py:7
+msgid "Application core"
+msgstr "Core de la aplicación"
+
+msgid "Home"
+msgstr "Inicio"
+
+#: local_secrets/panel/templates/admin/auth/user/add_form.html:9
+msgid "Enter a username and password."
+msgstr "Introduce un nombre de usuario y una contraseña."
+
+
+#: local_secrets/panel/templates/admin/base.html:99
+#: local_secrets/panel/templates/admin/filer/folder/directory_listing.html:151
+#: local_secrets/panel/templates/admin/search_form.html:19
+msgid "Search"
+msgstr "Buscar"
+
+#: local_secrets/panel/templates/admin/base.html:225
+#: local_secrets/panel/templates/admin/index.html:7
+#: local_secrets/panel/templates/admin/index.html:12
+msgid "Dashboard"
+msgstr "Tablero"
+
+#: local_secrets/panel/templates/admin/base.html:251
+msgid "Links"
+msgstr "Enlaces"
+
+#: local_secrets/panel/templates/admin/base.html:254
+msgid "Support web"
+msgstr "Soporte web"
+
+#: local_secrets/panel/templates/admin/base.html:259
+msgid "Support email"
+msgstr "Correo de soporte"
+
+#: local_secrets/panel/templates/admin/base.html:360
+msgid "Academy App"
+msgstr "Aplicación de Academia"
+
+#: local_secrets/panel/templates/admin/base.html:381
+msgid "UI Configuration"
+msgstr "Configuración de UI"
+
+#: local_secrets/panel/templates/admin/base.html:385
+msgid "Copy this info your settings file to persist these UI changes"
+msgstr "Copia esta información en tu archivo de configuración para mantener estos cambios de UI"
+
+#: local_secrets/panel/templates/admin/base.html:389
+#: local_secrets/panel/templates/admin/filer/folder/directory_listing.html:158
+#: local_secrets/panel/templates/admin/submit_line.html:41
+msgid "Close"
+msgstr "Cerrar"
+
+#: local_secrets/panel/templates/admin/change_form.html:34
+#: local_secrets/panel/templates/admin/change_list_object_tools.html:8
+#, python-format
+msgid "Add %(name)s"
+msgstr "Añadir %(name)s"
+
+#: local_secrets/panel/templates/admin/change_form.html:124
+#: local_secrets/panel/templates/registration/password_change_done.html:7
+#: local_secrets/panel/templates/registration/password_change_form.html:9
+msgid "Log out"
+msgstr "Cerrar sesión"
+
+#: local_secrets/panel/templates/admin/change_form_object_tools.html:6
+#: local_secrets/panel/templates/admin/filer/folder/change_form.html:24
+#: local_secrets/panel/templates/admin/object_history.html:10
+#: local_secrets/panel/templates/admin/object_history.html:21
+#: local_secrets/panel/templates/admin/solo/change_form.html:14
+#: local_secrets/panel/templates/admin/solo/object_history.html:9
+msgid "History"
+msgstr "Historial"
+
+#: local_secrets/panel/templates/admin/change_form_object_tools.html:8
+#: local_secrets/panel/templates/admin/edit_inline/stacked.html:34
+#: local_secrets/panel/templates/admin/edit_inline/tabular.html:46
+#: local_secrets/panel/templates/admin/filer/folder/change_form.html:26
+#: local_secrets/panel/templates/admin/solo/change_form.html:16
+msgid "View on site"
+msgstr "Ver en el sitio"
+
+#: local_secrets/panel/templates/admin/delete_confirmation.html:38
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
+"related objects, but your account doesn't have permission to delete the "
+"following types of objects:"
+msgstr ""
+"Eliminar el %(object_name)s '%(escaped_object)s' resultaría en la eliminación "
+"de objetos relacionados, pero tu cuenta no tiene permiso para eliminar los "
+"siguientes tipos de objetos:"
+
+#: local_secrets/panel/templates/admin/delete_confirmation.html:45
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the "
+"following protected related objects:"
+msgstr ""
+"Eliminar el %(object_name)s '%(escaped_object)s' requeriría eliminar los "
+"siguientes objetos relacionados protegidos:"
+
+#: local_secrets/panel/templates/admin/delete_confirmation.html:52
+#, python-format
+msgid ""
+"Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
+"All of the following related items will be deleted:"
+msgstr ""
+"¿Estás seguro de que quieres eliminar el %(object_name)s \"%(escaped_object)s\"? "
+"Todos los siguientes elementos relacionados serán eliminados:"
+
+#: local_secrets/panel/templates/admin/delete_confirmation.html:55
+#: local_secrets/panel/templates/admin/delete_selected_confirmation.html:54
+#: local_secrets/panel/templates/admin/filer/delete_selected_files_confirmation.html:41
+msgid "Objects"
+msgstr "Objetos"
+
+#: local_secrets/panel/templates/admin/delete_confirmation.html:65
+#: local_secrets/panel/templates/admin/delete_selected_confirmation.html:70
+#: local_secrets/panel/templates/admin/filer/delete_selected_files_confirmation.html:62
+msgid "Yes, I’m sure"
+msgstr "Sí, estoy seguro"
+
+#: local_secrets/panel/templates/admin/delete_confirmation.html:68
+#: local_secrets/panel/templates/admin/delete_selected_confirmation.html:73
+#: local_secrets/panel/templates/admin/filer/delete_selected_files_confirmation.html:65
+msgid "No, take me back"
+msgstr "No, llévame de vuelta"
+
+#: local_secrets/panel/templates/admin/delete_selected_confirmation.html:18
+#: local_secrets/panel/templates/admin/delete_selected_confirmation.html:22
+#: local_secrets/panel/templates/admin/delete_selected_confirmation.html:30
+#: local_secrets/panel/templates/admin/filer/delete_selected_files_confirmation.html:13
+msgid "Delete multiple objects"
+msgstr "Eliminar múltiples objetos"
+
+#: local_secrets/panel/templates/admin/delete_selected_confirmation.html:37
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would result in deleting related "
+"objects, but your account doesn't have permission to delete the following "
+"types of objects:"
+msgstr ""
+"Eliminar los %(objects_name)s seleccionados resultaría en la eliminación "
+"de objetos relacionados, pero tu cuenta no tiene permiso para eliminar los "
+"siguientes tipos de objetos:"
+
+#: local_secrets/panel/templates/admin/delete_selected_confirmation.html:44
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would require deleting the following "
+"protected related objects:"
+msgstr ""
+"Eliminar los %(objects_name)s seleccionados requeriría eliminar los "
+"siguientes objetos relacionados protegidos:"
+
+#: local_secrets/panel/templates/admin/delete_selected_confirmation.html:51
+#, python-format
+msgid ""
+"Are you sure you want to delete the selected %(objects_name)s? All of the "
+"following objects and their related items will be deleted:"
+msgstr ""
+"¿Estás seguro de que quieres eliminar los %(objects_name)s seleccionados? "
+"Todos los siguientes objetos y sus elementos relacionados serán eliminados:"
+
+#: local_secrets/panel/templates/admin/edit_inline/stacked.html:30
+#: local_secrets/panel/templates/admin/import_export/import.html:243
+msgid "New"
+msgstr "Nuevo"
+
+#: local_secrets/panel/templates/admin/edit_inline/tabular.html:19
+msgid "Delete?"
+msgstr "¿Eliminar?"
+
+#: local_secrets/panel/templates/admin/filer/breadcrumbs.html:4
+#: local_secrets/panel/templates/admin/filer/folder/change_form.html:6
+#: local_secrets/panel/templates/admin
+
+#: local_secrets/panel/templates/admin/filer/tools/detail_info.html:26
+#: local_secrets/panel/templates/admin_doc/model_detail.html:40
+#: local_secrets/sites/models.py:27 local_secrets/sites/models.py:226
+#: local_secrets/sites/models.py:254 local_secrets/sites/models.py:279
+#: local_secrets/travels/models.py:13
+msgid "Type"
+msgstr "Tipo"
+
+#: local_secrets/panel/templates/admin/filer/tools/detail_info.html:29
+msgid "Size"
+msgstr "Tamaño"
+
+#: local_secrets/panel/templates/admin/filer/tools/detail_info.html:32
+msgid "File-size"
+msgstr "Tamaño del archivo"
+
+#: local_secrets/panel/templates/admin/filer/tools/detail_info.html:35
+msgid "Modified"
+msgstr "Modificado"
+
+#: local_secrets/panel/templates/admin/filer/tools/detail_info.html:38
+msgid "Created"
+msgstr "Creado"
+
+#: local_secrets/panel/templates/admin/filer/tools/detail_info.html:41
+msgid "Owner"
+msgstr "Propietario"
+
+#: local_secrets/panel/templates/admin/filer/tools/detail_info.html:48
+msgid "Open file"
+msgstr "Abrir archivo"
+
+#: local_secrets/panel/templates/admin/filer/tools/detail_info.html:50
+msgid "Full size preview"
+msgstr "Vista previa en tamaño completo"
+
+#: local_secrets/panel/templates/admin/import_export/change_list_export_item.html:6
+#: local_secrets/panel/templates/admin/import_export/export.html:11
+msgid "Export"
+msgstr "Exportar"
+
+#: local_secrets/panel/templates/admin/import_export/change_list_import_item.html:6
+#: local_secrets/panel/templates/admin/import_export/import.html:12
+msgid "Import"
+msgstr "Importar"
+
+#: local_secrets/panel/templates/admin/import_export/export.html:60
+#: local_secrets/panel/templates/admin/import_export/import.html:110
+msgid "Submit"
+msgstr "Enviar"
+
+#: local_secrets/panel/templates/admin/import_export/import.html:25
+#: local_secrets/panel/templates/admin/import_export/import.html:63
+msgid "Confirm Import"
+msgstr "Confirmar importación"
+
+#: local_secrets/panel/templates/admin/import_export/import.html:32
+msgid ""
+"Below is a preview of data to be imported. If you are satisfied with the "
+"results, click 'Confirm import'"
+msgstr ""
+"A continuación se muestra una vista previa de los datos a importar. Si estás satisfecho con los resultados, haz clic en 'Confirmar importación'"
+
+#: local_secrets/panel/templates/admin/import_export/import.html:43
+#: local_secrets/panel/templates/admin/import_export/import.html:105
+#: local_secrets/panel/templates/admin/submit_line.html:9
+msgid "Actions"
+msgstr "Acciones"
+
+#: local_secrets/panel/templates/admin/import_export/import.html:48
+msgid "Confirm import"
+msgstr "Confirmar importación"
+
+#: local_secrets/panel/templates/admin/import_export/import.html:88
+msgid "This importer will import the following fields: "
+msgstr "Este importador importará los siguientes campos: "
+
+#: local_secrets/panel/templates/admin/import_export/import.html:127
+#: local_secrets/panel/templates/admin/import_export/import.html:174
+msgid "Errors"
+msgstr "Errores"
+
+#: local_secrets/panel/templates/admin/import_export/import.html:146
+msgid "Line number"
+msgstr "Número de línea"
+
+#: local_secrets/panel/templates/admin/import_export/import.html:166
+msgid "Some rows failed to validate"
+msgstr "Algunas filas no se validaron correctamente"
+
+#: local_secrets/panel/templates/admin/import_export/import.html:168
+msgid ""
+"Please correct these errors in your data where possible, then reupload it "
+"using the form above."
+msgstr ""
+"Por favor, corrige estos errores en tus datos cuando sea posible, luego vuelve a cargarlos utilizando el formulario anterior."
+
+#: local_secrets/panel/templates/admin/import_export/import.html:173
+msgid "Row"
+msgstr "Fila"
+
+#: local_secrets/panel/templates/admin/import_export/import.html:200
+msgid "Non field specific"
+msgstr "No específico de campo"
+
+#: local_secrets/panel/templates/admin/import_export/import.html:226
+msgid "Preview"
+msgstr "Vista previa"
+
+#: local_secrets/panel/templates/admin/import_export/import.html:245
+msgid "Skipped"
+msgstr "Omitido"
+
+#: local_secrets/panel/templates/admin/import_export/import.html:249
+msgid "Update"
+msgstr "Actualizar"
+
+#: local_secrets/panel/templates/admin/includes/object_delete_summary.html:2
+msgid "Summary"
+msgstr "Resumen"
+
+#: local_secrets/panel/templates/admin/index.html:42
+msgid "Add"
+msgstr "Añadir"
+
+#: local_secrets/panel/templates/admin/index.html:46
+msgid "View"
+msgstr "Ver"
+
+#: local_secrets/panel/templates/admin/index.html:73
+msgid "Recent actions"
+msgstr "Acciones recientes"
+
+#: local_secrets/panel/templates/admin/index.html:77
+msgid "None available"
+msgstr "Ninguno disponible"
+
+#: local_secrets/panel/templates/admin/index.html:91
+#, python-format
+msgid "%(timesince)s"
+msgstr "%(timesince)s"
+
+#: local_secrets/panel/templates/admin/login.html:14
+#: local_secrets/panel/templates/registration/logged_out.html:15
+#: local_secrets/panel/templates/registration/logged_out.html:62
+#: local_secrets/panel/templates/registration/password_reset_complete.html:15
+#: local_secrets/panel/templates/registration/password_reset_complete.html:62
+#: local_secrets/panel/templates/registration/password_reset_confirm.html:57
+#: local_secrets/panel/templates/registration/password_reset_done.html:37
+#: local_secrets/panel/templates/registration/password_reset_form.html:15
+msgid "Log in again"
+msgstr "Iniciar sesión nuevamente"
+
+#: local_secrets/panel/templates/admin/login.html:67
+#, python-format
+msgid ""
+"You are authenticated as %(username)s, but are not authorized to access this "
+"page. Would you like to login to a different account?"
+msgstr ""
+"Estás autenticado como %(username)s, pero no estás autorizado para acceder a esta página. ¿Te gustaría iniciar sesión con una cuenta diferente?"
+
+#: local_secrets/panel/templates/admin/login.html:117
+#: local_secrets/panel/templates/registration/password_reset_done.html:82
+msgid "Log in"
+msgstr "Iniciar sesión"
+
+#: local_secrets/panel/templates/admin/object_history.html:58
+msgid ""
+"This object doesn't have a change history. It probably wasn't added via this "
+"admin site."
+msgstr ""
+"Este objeto no tiene un historial de cambios. Probablemente no se agregó a través de este sitio de administración."
+
+#: local_secrets/panel/templates/admin/pagination.html:14
+#: local_secrets/panel/templates/admin/search_form.html:27
+msgid "Show all"
+msgstr "Mostrar todo"
+
+#: local_secrets/panel/templates/admin/pagination.html:17
+#: local_secrets/panel/templates/admin/submit_line.html:15
+msgid "Save"
+msgstr "Guardar"
+
+#: local_secrets/panel/templates/admin/popup_response.html:5
+msgid "Popup closing..."
+msgstr "Cerrando ventana emergente..."
+
+#: local_secrets/panel/templates/admin/search_form.html:22
+#, python-format
+msgid "%(counter)s result"
+msgid_plural "%(counter)s results"
+msgstr[0] "%(counter)s resultado"
+msgstr[1] "%(counter)s resultados"
+
+#: local_secrets/panel/templates/admin/search_form.html:25
+#, python-format
+msgid "%(full_result_count)s total"
+msgstr "%(full_result_count)s en total"
+
+#: local_secrets/panel/templates/admin/submit_line.html:26
+msgid "Save as new"
+msgstr "Guardar como nuevo"
+
+#: local_secrets/panel/templates/admin/submit_line.html:31
+msgid "Save and add another"
+msgstr "Guardar y añadir otro"
+
+#: local_secrets/panel/templates/admin/submit_line.html:36
+msgid "Save and continue editing"
+msgstr "Guardar y continuar editando"
+
+#: local_secrets/panel/templates/admin/submit_line.html:36
+msgid "Save and view"
+msgstr "Guardar y ver"
+
+
+#: local_secrets/panel/templates/admin_doc/bookmarklets.html:7
+#: local_secrets/panel/templates/admin_doc/index.html:7
+#: local_secrets/panel/templates/admin_doc/index.html:11
+#: local_secrets/panel/templates/admin_doc/index.html:12
+#: local_secrets/panel/templates/admin_doc/missing_docutils.html:7
+#: local_secrets/panel/templates/admin_doc/missing_docutils.html:12
+#: local_secrets/panel/templates/admin_doc/model_detail.html:15
+#: local_secrets/panel/templates/admin_doc/model_index.html:9
+#: local_secrets/panel/templates/admin_doc/template_detail.html:7
+#: local_secrets/panel/templates/admin_doc/template_filter_index.html:9
+#: local_secrets/panel/templates/admin_doc/template_tag_index.html:9
+#: local_secrets/panel/templates/admin_doc/view_detail.html:8
+#: local_secrets/panel/templates/admin_doc/view_index.html:9
+#: local_secrets/panel/templates/registration/password_change_done.html:5
+#: local_secrets/panel/templates/registration/password_change_form.html:8
+
+msgid "Documentation"
+msgstr "Documentación"
+
+msgid "Bookmarklets"
+msgstr "Bookmarklets"
+
+msgid "Documentation bookmarklets"
+msgstr "Bookmarklets de documentación"
+
+msgid ""
+"To install bookmarklets, drag the link to your bookmarks toolbar, or right-"
+"click the link and add it to your bookmarks. Now you can select the "
+"bookmarklet from any page in the site."
+msgstr ""
+"Para instalar los bookmarklets, arrastra el enlace a la barra de marcadores, o haz clic derecho en el enlace y añádelo a tus marcadores. Ahora puedes seleccionar el bookmarklet desde cualquier página del sitio."
+
+msgid "Documentation for this page"
+msgstr "Documentación para esta página"
+
+msgid ""
+"Jumps you from any page to the documentation for the view that generates "
+"that page."
+msgstr ""
+"Te lleva desde cualquier página a la documentación de la vista que genera esa página."
+
+msgid "Tags"
+msgstr "Tags"
+
+msgid "List of all the template tags and their functions."
+msgstr "Lista de todas las etiquetas de plantillas y sus funciones."
+
+msgid "Filters"
+msgstr "Filtros"
+
+msgid ""
+"Filters are actions which can be applied to variables in a template to alter "
+"the output."
+msgstr ""
+"Los filtros son acciones que se pueden aplicar a variables en una plantilla para alterar la salida."
+
+msgid "Models"
+msgstr "Modelos"
+
+msgid ""
+"Models are descriptions of all the objects in the system and their "
+"associated fields. Each model has a list of fields which can be accessed as "
+"template variables"
+msgstr ""
+"Los modelos son descripciones de todos los objetos en el sistema y sus campos asociados. Cada modelo tiene una lista de campos que pueden ser accedidos como variables de plantilla."
+
+msgid "Views"
+msgstr "Vistas"
+
+msgid ""
+"Each page on the public site is generated by a view. The view defines which "
+"template is used to generate the page and which objects are available to "
+"that template."
+msgstr ""
+"Cada página en el sitio público es generada por una vista. La vista define qué plantilla se usa para generar la página y qué objetos están disponibles para esa plantilla."
+
+msgid "Tools for your browser to quickly access admin functionality."
+msgstr "Herramientas para tu navegador para acceder rápidamente a la funcionalidad de administración."
+
+msgid "Please install docutils"
+msgstr "Por favor, instala docutils"
+
+msgid ""
+"The admin documentation system requires Python's <a "
+"href=\"%(link)s\">docutils</a> library."
+msgstr ""
+"El sistema de documentación de administración requiere la biblioteca <a href=\"%(link)s\">docutils</a> de Python."
+
+msgid ""
+"Please ask your administrators to install <a href=\"%(link)s\">docutils</a>."
+msgstr ""
+"Por favor, pide a tus administradores que instalen <a href=\"%(link)s\">docutils</a>."
+
+msgid "Model: %(name)s"
+msgstr "Modelo: %(name)s"
+
+#: local_secrets/panel/templates/admin_doc/model_detail.html:34
+msgid "Fields"
+msgstr "Campos"
+
+#: local_secrets/panel/templates/admin_doc/model_detail.html:39
+msgid "Field"
+msgstr "Campo"
+
+msgid "Methods with arguments"
+msgstr "Métodos con argumentos"
+
+msgid "Method"
+msgstr "Método"
+
+msgid "Arguments"
+msgstr "Argumentos"
+
+msgid "Back to Model documentation"
+msgstr "Volver a la documentación del modelo"
+
+msgid "Templates"
+msgstr "Plantillas"
+
+msgid "Template: %(name)s"
+msgstr "Plantilla: %(name)s"
+
+msgid "Template: <q>%(name)s</q>"
+msgstr "Plantilla: <q>%(name)s</q>"
+
+msgid "Search path for template <q>%(name)s</q>:"
+msgstr "Ruta de búsqueda para la plantilla <q>%(name)s</q>:"
+
+msgid "(does not exist)"
+msgstr "(no existe)"
+
+msgid "Back to Documentation"
+msgstr "Volver a la documentación"
+
+msgid "Template filters"
+msgstr "Filtros de plantillas"
+
+msgid "Built-in filters"
+msgstr "Filtros integrados"
+
+msgid "View function: <code>%(full_name)s</code>. Name: <code>%(url_name)s</code>."
+msgstr "Función de vista: <code>%(full_name)s</code>. Nombre: <code>%(url_name)s</code>."
+
+msgid "To use these filters, put <code>%(code)s</code> in your template before using the filter."
+msgstr "Para usar estos filtros, coloque <code>%(code)s</code> en su plantilla antes de usar el filtro."
+
+msgid "Template tags"
+msgstr "Etiquetas de plantillas"
+
+msgid "Template tag documentation"
+msgstr "Documentación de etiquetas de plantillas"
+
+msgid "Built-in tags"
+msgstr "Etiquetas integradas"
+
+msgid "To use these tags, put <code>%(code)s</code> in your template before using the tag."
+msgstr "Para usar estas etiquetas, coloque <code>%(code)s</code> en su plantilla antes de usar la etiqueta."
+
+msgid "View: %(name)s"
+msgstr "Vista: %(name)s"
+
+msgid "Context:"
+msgstr "Contexto:"
+
+msgid "Templates:"
+msgstr "Plantillas:"
+
+msgid "Back to View documentation"
+msgstr "Volver a la documentación de la vista"
+
+msgid "View documentation"
+msgstr "Documentación de vistas"
+
+msgid "Views by namespace %(name)s"
+msgstr "Vistas por espacio de nombres %(name)s"
+
+msgid "Views by empty namespace"
+msgstr "Vistas por espacio de nombres vacío"
+
+msgid "General"
+msgstr "General"
+
+msgid "Thanks for spending some quality time with the Web site today."
+msgstr "Gracias por pasar un tiempo de calidad con el sitio web hoy."
+
+msgid "Password change"
+msgstr "Cambio de contraseña"
+
+msgid "Your password was changed."
+msgstr "Tu contraseña ha sido cambiada."
+
+msgid "Your password has been set. You may go ahead and log in now."
+msgstr "Tu contraseña ha sido configurada. Ahora puedes iniciar sesión."
+
+msgid "Please enter your new password twice so we can verify you typed it in correctly."
+msgstr "Por favor, introduce tu nueva contraseña dos veces para que podamos verificar que la has escrito correctamente."
+
+msgid "The password reset link was invalid, possibly because it has already been used. Please request a new password reset."
+msgstr "El enlace para restablecer la contraseña no es válido, posiblemente porque ya ha sido utilizado. Por favor, solicita un nuevo restablecimiento de contraseña."
+
+msgid "We’ve emailed you instructions for setting your password, if an account exists with the email you entered. You should receive them shortly."
+msgstr "Te hemos enviado por correo electrónico las instrucciones para configurar tu contraseña, si existe una cuenta con el correo electrónico que ingresaste. Deberías recibirlas en breve."
+
+msgid "If you don’t receive an email, please make sure you’ve entered the address you registered with, and check your spam folder."
+msgstr "Si no recibes un correo electrónico, por favor asegúrate de haber ingresado la dirección con la que te registraste y revisa tu carpeta de spam."
+
+msgid "You're receiving this email because you requested a password reset for your user account at %(site_name)s."
+msgstr "Estás recibiendo este correo electrónico porque solicitaste un restablecimiento de contraseña para tu cuenta de usuario en %(site_name)s."
+
+msgid "Please go to the following page and choose a new password:"
+msgstr "Por favor, ve a la siguiente página y elige una nueva contraseña:"
+
+msgid "Your username, in case you’ve forgotten:"
+msgstr "Tu nombre de usuario, en caso de que lo hayas olvidado:"
+
+msgid "Thanks for using our site!"
+msgstr "¡Gracias por usar nuestro sitio!"
+
+msgid "The %(site_name)s team"
+msgstr "El equipo de %(site_name)s"
+
+msgid "Forgotten your password? Enter your email address below, and we’ll email instructions for setting a new one."
+msgstr "¿Olvidaste tu contraseña? Ingresa tu dirección de correo electrónico a continuación y te enviaremos instrucciones para configurar una nueva."
+
+msgid "Added {name} “{object}”."
+msgstr "Añadido {name} “{object}”."
+
+msgid "Added."
+msgstr "Añadido."
+
+msgid "and"
+msgstr "y"
+
+msgid "Changed {fields}."
+msgstr "Cambiado {fields}."
+
+msgid "Deleted “{object}”."
+msgstr "Eliminado “{object}”."
+
+msgid "Could not reverse url from {instance}"
+msgstr "No se pudo revertir la URL de {instance}"
+
+msgid "Title"
+msgstr "Título"
+
+msgid "Stops"
+msgstr "Paradas"
+
+msgid "Number of times viewed"
+msgstr "Número de veces visto"
+
+msgid "Is top 10"
+msgstr "Es top 10"
+
+msgid "Route"
+msgstr "Itinerario"
+
+msgid "Routes"
+msgstr "Itinerarios"
+
+msgid "Search level"
+msgstr "Nivel de búsqueda"
+
+msgid "Search levels"
+msgstr "Niveles de búsqueda"
+
+msgid "Category"
+msgstr "Categoría"
+
+msgid "Categories"
+msgstr "Categorías"
+
+msgid "Subcategory"
+msgstr "Subcategoría"
+
+msgid "Subcategories"
+msgstr "Subcategorías"
+
+msgid "Levels"
+msgstr "Niveles"
+
+msgid "Frequency"
+msgstr "Frecuencia"
+
+msgid "Contact phone"
+msgstr "Teléfono de contacto"
+
+msgid "Users"
+msgstr "Usuarios"
+
+msgid "Created by"
+msgstr "Creado/a por"
+
+msgid "Always open"
+msgstr "Siempre abierto"
+
+msgid "Site"
+msgstr "Lugar"
+
+msgid "Sites"
+msgstr "Lugares"
+
+msgid "El usuario ya tiene más de 50 favoritos"
+msgstr "El usuario ya tiene más de 50 favoritos"
+
+msgid "Translated Description"
+msgstr "Descripción traducida"
+
+msgid "Level"
+msgstr "Nivel"
+
+msgid "Body"
+msgstr "Cuerpo"
+
+msgid "Rating"
+msgstr "Valoración"
+
+msgid "Created at"
+msgstr "Creado a las"
+
+msgid "Images Sizes"
+msgstr "Tamaños de imágenes"
+
+msgid "Videos Sizes"
+msgstr "Tamaños de vídeos"
+
+msgid "The review must have at least 1 star"
+msgstr "La reseña debe tener al menos 1 estrella"
+
+
+#: local_secrets/travels/models.py:15
+msgid "Initial Date"
+msgstr "Fecha inicial"
+
+#: local_secrets/travels/models.py:16
+msgid "End Date"
+msgstr "Fecha final"
+
+#: local_secrets/travels/models.py:24
+msgid "Travel"
+msgstr "Viaje"
+
+#: local_secrets/travels/models.py:25
+msgid "Travels"
+msgstr "Viajes"
+
+msgid "You do not have permissions to delete this travel"
+msgstr "No tienes permisos para eliminar este viaje"
+
+msgid "Travel deleted"
+msgstr "Viaje eliminado"
+
+msgid "Two Factor Authentication"
+msgstr "Autenticación de dos factores"
+
+msgid "Personal info"
+msgstr "Información personal"
+
+msgid "Permissions"
+msgstr "Permisos"
+
+msgid "Important dates"
+msgstr "Fechas importantes"
+
+msgid "Prefix"
+msgstr "Prefijo"
+
+msgid "Phone"
+msgstr "Teléfono"
+
+msgid "Profile Picture"
+msgstr "Imagen de perfil"
+
+msgid "Device ID"
+msgstr "Id de dispositivo"
+
+msgid "Tag"
+msgstr "Etiqueta"
+
+msgid "Translated Tag"
+msgstr "Etiqueta traducida"
+
+msgid "User Preference"
+msgstr "Preferencia de usuario"
+
+msgid "Users Preferences"
+msgstr "Preferencias de usuario"
+
+msgid "Notification"
+msgstr "Notificación"
+
+msgid "Notifications"
+msgstr "Notificaciones"
+
+msgid "Has been seen"
+msgstr "Ha sido visto"
+
+msgid "Users Notification"
+msgstr "Notificación de usuario"
+
+msgid "Users Notifications"
+msgstr "Notificaciones de usuarios"
+
+msgid "Ambassador"
+msgstr "Embajador"
+
+msgid "Ambassadors"
+msgstr "Embajadores"
+
+msgid "The password must be 8 characters long, have an uppercase letter, a number and a special character"
+msgstr "La contraseña debe tener 8 caracteres, una letra mayúscula, un número y un carácter especial"
+
+msgid "There is an user with the same email"
+msgstr "El email ya existe"
+
+msgid "There is an user with the same username"
+msgstr "El nombre de usuario ya existe"
+
+msgid "The access and refresh tokens have been deleted successfully"
+msgstr "Los tokens de acceso y actualización se han eliminado con éxito"
+
+#: local_secrets/users/views.py:192
+#, fuzzy
+#| msgid "Profile Picture"
+msgid "Profile picture updated"
+msgstr "Imagen de perfil"
+
+#: local_secrets/users/views.py:199
+#, fuzzy
+#| msgid "Language"
+msgid "Language updated"
+msgstr "Idioma"
+
+#~ msgid "Comment"
+#~ msgstr "Comentario"
+
+#~ msgid "Comments"
+#~ msgstr "Comentarios"
+
+#~ msgid "Valencia"
+#~ msgstr "València"
