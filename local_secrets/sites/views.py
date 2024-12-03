@@ -6,7 +6,7 @@ from dal import autocomplete
 from django.contrib.gis.db.models.functions import Distance
 from django.core.cache import cache
 from django.core.files.images import get_image_dimensions
-from django.db.models import Case, When, Max, Count, IntegerField, Prefetch
+from django.db.models import Case, When, Max, Count, IntegerField, Prefetch, Q
 from django.db.models.functions import Random
 from django.shortcuts import redirect
 from rest_framework import mixins, viewsets
@@ -44,21 +44,21 @@ class CategoryViewSet(viewsets.GenericViewSet, mixins.ListModelMixin):
             levels = levels.filter(sites__city__id=city)
 
             # Prefetch related subcategories that have sites in the specified city
-            filtered_subcategories = SubCategory.objects.filter(
+            filtered_subcategories = SubCategory.objects_for_api.filter(
                 sites__city=city,
                 sites__type=level_type
             ).distinct().annotate(
-                site_count=Count('sites', output_field=IntegerField())
+                site_count=Count('sites', filter=Q(sites__city__id=city), output_field=IntegerField())
             ).filter(site_count__gt=0).order_by('order')
 
             # Prefetch related categories that have sites in the specified city
-            filtered_categories = Category.objects.prefetch_related(
+            filtered_categories = Category.objects_for_api.prefetch_related(
                 Prefetch('subcategories', queryset=filtered_subcategories),
             ).filter(
                 sites__city=city,
                 sites__type=level_type
             ).distinct().annotate(
-                site_count=Count('sites', output_field=IntegerField())
+                site_count=Count('sites', filter=Q(sites__city__id=city), output_field=IntegerField())
             ).filter(site_count__gt=0).order_by('order', '-site_count')
 
             # Prefetch filtered categories to avoid fetching unfiltered categories
@@ -66,7 +66,7 @@ class CategoryViewSet(viewsets.GenericViewSet, mixins.ListModelMixin):
                 Prefetch('categories', queryset=filtered_categories),
             )
 
-        levels = levels.annotate(site_count=Count('sites', output_field=IntegerField())).filter(site_count__gt=0)
+        levels = levels.annotate(site_count=Count('sites', filter=Q(sites__city__id=city), output_field=IntegerField())).filter(site_count__gt=0)
         return levels
 
     def get_serializer_class(self):

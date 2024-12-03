@@ -49,7 +49,7 @@ class CategorySerializer(serializers.ModelSerializer):
 
     def get_subcategories(self, obj):
         return SubCategorySerializer(
-            SubCategory.objects_for_api.filter(category__id=obj.id),
+            obj.subcategories.all(),
             many=True,
             context=self.context
         ).data
@@ -85,7 +85,7 @@ class LevelSerializer(serializers.ModelSerializer):
 
     def get_categories(self, obj):
         return CategorySerializer(
-            Category.objects_for_api.filter(level__id=obj.id),
+           obj.categories.all(),
             many=True,
             context=self.context
         ).data
