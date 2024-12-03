@@ -35,7 +35,7 @@ from local_secrets.sites.serializers import (
 
 class CategoryViewSet(viewsets.GenericViewSet, mixins.ListModelMixin):
     def get_queryset(self):
-        levels = Level.objects.all()
+        levels = Level.objects_for_api.all()
         level_type = self.request.query_params.get('type')
         if level_type:
             levels = levels.filter(type=level_type)
@@ -43,15 +43,27 @@ class CategoryViewSet(viewsets.GenericViewSet, mixins.ListModelMixin):
         if city:
             levels = levels.filter(sites__city__id=city)
 
-            # Prefetch related categories that have sites in the specified city
-            filtered_categories = Category.objects.filter(
+            # Prefetch related subcategories that have sites in the specified city
+            filtered_subcategories = SubCategory.objects.filter(
                 sites__city=city,
                 sites__type=level_type
-            ).distinct().annotate(site_count=Count('sites', output_field=IntegerField())).order_by('order','-site_count')
+            ).distinct().annotate(
+                site_count=Count('sites', output_field=IntegerField())
+            ).filter(site_count__gt=0).order_by('order')
+
+            # Prefetch related categories that have sites in the specified city
+            filtered_categories = Category.objects.prefetch_related(
+                Prefetch('subcategories', queryset=filtered_subcategories),
+            ).filter(
+                sites__city=city,
+                sites__type=level_type
+            ).distinct().annotate(
+                site_count=Count('sites', output_field=IntegerField())
+            ).filter(site_count__gt=0).order_by('order', '-site_count')
 
             # Prefetch filtered categories to avoid fetching unfiltered categories
             levels = levels.prefetch_related(
-                Prefetch('categories', queryset=filtered_categories)
+                Prefetch('categories', queryset=filtered_categories),
             )
 
         levels = levels.annotate(site_count=Count('sites', output_field=IntegerField())).filter(site_count__gt=0)

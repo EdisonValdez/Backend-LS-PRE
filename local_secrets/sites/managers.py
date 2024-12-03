@@ -15,24 +15,7 @@ from local_secrets.sites.choices import Day
 
 class SiteManager(models.Manager):
     def get_queryset(self):
-        # big_query = '''WITH translations AS ( SELECT ts.site_id, l.code, ts.title, ts.description FROM sites_translatedsite ts JOIN languages_language l ON ts.language_id = l.id WHERE l.code IN ('es', 'en-GB', 'en', 'fr', 'pt', 'de') ) SELECT s.id, s.title, s.type, s.description, s.is_suggested, s.has_been_accepted, s.frequency, s.media, s.url, s.phone, s.address_id, s.city_id, s.created_by_id, s.always_open, s.is_top_10, CASE WHEN s.always_open THEN TRUE WHEN s.frequency = 'never' THEN FALSE WHEN s.frequency = 'day' THEN TRUE WHEN s.frequency = 'week' THEN sched.day = 'tuesday' WHEN s.frequency = 'month' THEN EXTRACT(DAY FROM spec.day) = 15 WHEN s.frequency = 'year' THEN spec.day = DATE '2024-10-15' WHEN s.frequency = 'workday' THEN TRUE ELSE FALSE END AS is_open, MAX(t.title) FILTER (WHERE t.code = 'es') AS translated_title_es, MAX(t.description) FILTER (WHERE t.code = 'es') AS translated_description_es, MAX(t.title) FILTER (WHERE t.code = 'en-GB') AS translated_title_en_gb, MAX(t.description) FILTER (WHERE t.code = 'en-GB') AS translated_description_en_gb, MAX(t.title) FILTER (WHERE t.code = 'en') AS translated_title_en, MAX(t.description) FILTER (WHERE t.code = 'en') AS translated_description_en, MAX(t.title) FILTER (WHERE t.code = 'fr') AS translated_title_fr, MAX(t.description) FILTER (WHERE t.code = 'fr') AS translated_description_fr, MAX(t.title) FILTER (WHERE t.code = 'pt') AS translated_title_pt, MAX(t.description) FILTER (WHERE t.code = 'pt') AS translated_description_pt, MAX(t.title) FILTER (WHERE t.code = 'de') AS translated_title_de, MAX(t.description) FILTER (WHERE t.code = 'de') AS translated_description_de FROM sites_site s LEFT JOIN sites_schedule sched ON s.id = sched.site_id LEFT JOIN sites_specialschedule spec ON s.id = spec.site_id LEFT JOIN cities_city c ON s.city_id = c.id LEFT JOIN translations t ON t.site_id = s.id WHERE NOT ( ( (NOT c.activated AND c.activated IS NOT NULL) OR NOT s.has_been_accepted ) AND NOT ( s.frequency IN ('never') AND ( CASE WHEN s.always_open THEN TRUE WHEN s.frequency = 'never' THEN FALSE WHEN s.frequency = 'day' THEN TRUE WHEN s.frequency = 'week' THEN sched.day = 'tuesday' WHEN s.frequency = 'month' THEN EXTRACT(DAY FROM spec.day) = 15 WHEN s.frequency = 'year' THEN spec.day = DATE '2024-10-15' WHEN s.frequency = 'workday' THEN TRUE ELSE FALSE END ) AND s.type = 'event' ) AND NOT ( s.frequency IN ('never') AND EXISTS ( SELECT 1 FROM sites_specialschedule ss WHERE ss.day < DATE '2024-10-15' AND ss.site_id = s.id LIMIT 1 ) AND EXISTS ( SELECT 1 FROM sites_site U0 LEFT JOIN sites_specialschedule U1 ON U0.id = U1.site_id WHERE U1.id IS NULL AND U0.id = s.id ) AND s.type = 'event' ) ) GROUP BY s.id, s.title, s.type, s.description, s.is_suggested, s.has_been_accepted, s.frequency, s.media, s.url, s.phone, s.address_id, s.city_id, s.created_by_id, s.always_open, s.is_top_10, sched.day, spec.day, c.activated ;'''
-        # from django.db import connection
-        # cursor = connection.cursor()
-        # return cursor.execute(big_query)
-
         return (
-        #.exclude(
-        #     Q(Q(city__activated=False) | Q(has_been_accepted=False)))
-        # .exclude(
-        #     Q(type='event', is_open=False, frequency__in=['never', ])
-        # )
-        # .exclude(
-        #     type='event',
-        #     frequency__in=['never', ],
-        #     special_schedules__day__lt=now().date(),
-        #     special_schedules__isnull=True,
-        # )
-
             super(SiteManager, self).get_queryset().filter(
                 city__activated=True, has_been_accepted=True
             )
