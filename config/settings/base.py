@@ -182,17 +182,37 @@ LOGGING = {
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'NAME': env('POSTGRES_DB'),
-        'USER': env('POSTGRES_USER'),
-        'PASSWORD': env('POSTGRES_PASSWORD'),
-        'HOST': env('POSTGRES_HOST'),
-        'PORT': env('POSTGRES_PORT'),
-    }
-}
 
+#EDISON ENVIRONMENT#EDISON ENVIRONMENT#EDISON ENVIRONMENT#EDISON ENVIRONMENT
+#EDISON ENVIRONMENT#EDISON ENVIRONMENT#EDISON ENVIRONMENT#EDISON ENVIRONMENT
+if environment in ['local', 'test']: 
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.contrib.gis.db.backends.postgis',
+            'NAME': 'localsecrets_db_spatial',  
+            'USER': 'postgres',  
+            'PASSWORD': 'Thesecret1',  
+            'HOST': 'localhost', 
+            'PORT': '5432',  
+        }
+    }
+
+    GEOS_LIBRARY_PATH = r"C:\Users\Usuari\Desktop\projects\GDAL\bin\geos_c.dll"
+    GDAL_LIBRARY_PATH = r"C:\Users\Usuari\Desktop\projects\GDAL\bin\gdal.dll"
+    GEOS_LIBRARY_PATH = r"C:\Users\Usuari\Desktop\projects\GDAL\bin\geos_c.dll"
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.contrib.gis.db.backends.postgis',
+            'NAME': env('POSTGRES_DB'),
+            'USER': env('POSTGRES_USER'),
+            'PASSWORD': env('POSTGRES_PASSWORD'),
+            'HOST': env('POSTGRES_HOST'),
+            'PORT': env('POSTGRES_PORT'),
+        }
+    }
+#EDISON ENVIRONMENT#EDISON ENVIRONMENT#EDISON ENVIRONMENT#EDISON ENVIRONMENT
+#EDISON ENVIRONMENT#EDISON ENVIRONMENT#EDISON ENVIRONMENT#EDISON ENVIRONMENT
 
 # Cache
 # https://docs.djangoproject.com/en/3.2/ref/settings/#caches
@@ -407,6 +427,11 @@ IMAGE_MIN_SIZE = 5 * 1048576  # 5MB
 IMAGE_MAX_SIZE = 12 * 1048576  # 12MB
 
 DIRECTIONS_API_KEY = env('DIRECTIONS_API_KEY')
+
+import os
+
+GDAL_LIBRARY_PATH = r"C:\Users\Usuari\Desktop\projects\GDAL\bin\gdal.dll"
+
 
 #
 # # Spaces

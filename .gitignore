@@ -40,3 +40,13 @@ requirements.txt
 
 # Django/Python files
 static/
+
+.docker/
+.scripts/
+.venv/
+.well-known/
+
+Pipfile
+Pipfile.lock
+ 
+local_secrets/google-services.json

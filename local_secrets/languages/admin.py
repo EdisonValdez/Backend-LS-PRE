@@ -4,7 +4,8 @@ from import_export.resources import ModelResource
 
 from local_secrets.core.admin import admin_site
 from local_secrets.languages.models import Language, TranslatedLanguage
-
+from django.contrib import admin
+from django.apps import apps
 
 class LanguageResource(ModelResource):
     class Meta:
@@ -24,11 +25,17 @@ class LanguageAdmin(ImportExportModelAdmin):
     inlines = [
         TranslatedLanguageInLine,
     ]
+    search_fields = ['name', 'code']
 
 
 class TranslationAdmin(admin.ModelAdmin):
     list_display = ('language', 'platform')
 
 
+Language = apps.get_model('languages', 'Language')  # Dynamically fetch model
+
+if not admin.site.is_registered(Language):
+    admin.site.register(Language)
+    
 admin_site.register(Language, LanguageAdmin)
 admin_site.register(TranslatedLanguage)
