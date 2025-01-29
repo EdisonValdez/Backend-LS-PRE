@@ -35,7 +35,6 @@ htmlcov/
 *.sqlite3
 
 # Docker related files
-requirements.txt
 .pgsql
 
 # Django/Python files
