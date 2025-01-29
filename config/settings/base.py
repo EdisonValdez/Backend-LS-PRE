@@ -197,9 +197,9 @@ if environment in ['local', 'test']:
         }
     }
 
-    GEOS_LIBRARY_PATH = r"C:\Users\Usuari\Desktop\projects\GDAL\bin\geos_c.dll"
-    GDAL_LIBRARY_PATH = r"C:\Users\Usuari\Desktop\projects\GDAL\bin\gdal.dll"
-    GEOS_LIBRARY_PATH = r"C:\Users\Usuari\Desktop\projects\GDAL\bin\geos_c.dll"
+    GEOS_LIBRARY_PATH = r"local_secrets\GDAL\bin\geos_c.dll"
+    GDAL_LIBRARY_PATH = r"local_secrets\GDAL\bin\gdal.dll"
+    GEOS_LIBRARY_PATH = r"local_secrets\GDAL\bin\geos_c.dll"
 else:
     DATABASES = {
         'default': {
@@ -430,7 +430,7 @@ DIRECTIONS_API_KEY = env('DIRECTIONS_API_KEY')
 
 import os
 
-GDAL_LIBRARY_PATH = r"C:\Users\Usuari\Desktop\projects\GDAL\bin\gdal.dll"
+GDAL_LIBRARY_PATH = r"local_secrets\GDAL\bin\gdal.dll"
 
 
 #
