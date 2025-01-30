@@ -427,8 +427,7 @@ DIRECTIONS_API_KEY = env('DIRECTIONS_API_KEY')
 import os
 GEOS_LIBRARY_PATH = r"local_secrets\GDAL\bin\geos_c.dll"
 GDAL_LIBRARY_PATH = r"local_secrets\GDAL\bin\gdal.dll"
-GEOS_LIBRARY_PATH = r"local_secrets\GDAL\bin\geos_c.dll"  
-GDAL_LIBRARY_PATH = r"local_secrets\GDAL\bin\gdal.dll"
+ 
  
 #
 # # Spaces
