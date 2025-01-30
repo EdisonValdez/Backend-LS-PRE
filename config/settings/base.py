@@ -196,10 +196,6 @@ if environment in ['local', 'test']:
             'PORT': '5432',  
         }
     }
-
-    GEOS_LIBRARY_PATH = r"local_secrets\GDAL\bin\geos_c.dll"
-    GDAL_LIBRARY_PATH = r"local_secrets\GDAL\bin\gdal.dll"
-    GEOS_LIBRARY_PATH = r"local_secrets\GDAL\bin\geos_c.dll"
 else:
     DATABASES = {
         'default': {
@@ -429,10 +425,11 @@ IMAGE_MAX_SIZE = 12 * 1048576  # 12MB
 DIRECTIONS_API_KEY = env('DIRECTIONS_API_KEY')
 
 import os
-
+GEOS_LIBRARY_PATH = r"local_secrets\GDAL\bin\geos_c.dll"
 GDAL_LIBRARY_PATH = r"local_secrets\GDAL\bin\gdal.dll"
-
-
+GEOS_LIBRARY_PATH = r"local_secrets\GDAL\bin\geos_c.dll"  
+GDAL_LIBRARY_PATH = r"local_secrets\GDAL\bin\gdal.dll"
+ 
 #
 # # Spaces
 # AWS_ACCESS_KEY_ID = 'DO00VFP9KVXW8QYP23FH'

@@ -44,8 +44,10 @@ static/
 .scripts/
 .venv/
 .well-known/
+.python-version
 
 Pipfile
 Pipfile.lock
  
 local_secrets/google-services.json
+
